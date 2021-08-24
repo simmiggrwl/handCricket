@@ -3,44 +3,66 @@
   <head lang="en">
     <meta charset="utf-8">
     <title>Hand Cricket</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
     <script src="response.js" defer></script>
   </head>
-  <body onload="start()">
+  <body onload="start()"></body>
     <h1>Hand Cricket</h1>
+    <div class="game">
+    <div class="main">
+    <div class="grids">
+    <h3 id="batsman">You are the batsman. Choose Number:</h3>
     <div class="userbuttonsbat">
-      <h3>You are the batsman. Choose Number</h3>
-      <button style="background-color: red" class="b1">1</button>
-      <button style="background-color: red" class="b2">2</button>
-      <button style="background-color: red" class="b3">3</button>
-      <button style="background-color: red" class="b4">4</button>
-      <button style="background-color: red" class="b5">5</button>
-      <button style="background-color: red" class="b6">6</button>
-      <button style="background-color: red" class="b7">7</button>
-      <button style="background-color: red" class="b8">8</button>
-      <button style="background-color: red" class="b9">9</button>
-      <button style="background-color: red" class="b10">10</button>
+      <button style="background-color: black" class="b1">1</button>
+      <button style="background-color: black" class="b2">2</button>
+      <button style="background-color: black" class="b3">3</button>
+      <button style="background-color: black" class="b4">4</button>
+      <button style="background-color: black" class="b5">5</button>
+      <button style="background-color: black" class="b6">6</button>
+      <button style="background-color: black" class="b7">7</button>
+      <button style="background-color: black" class="b8">8</button>
+      <button style="background-color: black" class="b9">9</button>
+      <button style="background-color: black" class="b10">10</button>
     </div>
-
+    <div class="a">
+    <h3 id="bowlsman">You are the bowlsman. Choose Number:</h3>
     <div class="userbuttonsbowl">
-        <h3>You are the bowlsman. Choose Number</h3>
-        <button style="background-color: blue" class="b1">1</button>
-        <button style="background-color: blue" class="b2">2</button>
-        <button style="background-color: blue" class="b3">3</button>
-        <button style="background-color: blue" class="b4">4</button>
-        <button style="background-color: blue" class="b5">5</button>
-        <button style="background-color: blue" class="b6">6</button>
-        <button style="background-color: blue" class="b7">7</button>
-        <button style="background-color: blue" class="b8">8</button>
-        <button style="background-color: blue" class="b9">9</button>
-        <button style="background-color: blue" class="b10">10</button>
-      </div>
+        <button style="background-color: white" class="b1">1</button>
+        <button style="background-color: white" class="b2">2</button>
+        <button style="background-color: white" class="b3">3</button>
+        <button style="background-color: white" class="b4">4</button>
+        <button style="background-color: white" class="b5">5</button>
+        <button style="background-color: white" class="b6">6</button>
+        <button style="background-color: white" class="b7">7</button>
+        <button style="background-color: white" class="b8">8</button>
+        <button style="background-color: white" class="b9">9</button>
+        <button style="background-color: white" class="b10">10</button>
+      </div></div></div>
+      <div>
+      <div class="tables">
+        <table class="userbatting">
+            <h4>User as Batsman</h4>
+            <tr>
+                <th>User Number</th>
+                <th>Computer Number</th>
+            </tr>
+        </table>
+        <table class="userbowling">
+            <h4>User as Bowlsman</h4>
+            <tr>
+                <th>User Number</th>
+                <th>Computer Number</th>
+            </tr>
+        </table>
+    </div>
 
     <div class="footer">   
         <button id="end">End Game</button>
         <button id="reset">Reset</button>
         <span id="userscore">User Score: 000</span>  
         <span id="compscore">Computer Score: 000</span>  
-      </div>  
+      </div> 
+      </div> </div>
       
   </body>
 </html>
