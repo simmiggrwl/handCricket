@@ -57,8 +57,9 @@ function userscore(){
         var row = tablebatting.insertRow(1);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
-        cell1.innerHTML = `${usernumber}`;
-        cell2.innerHTML = `${compnumber}`; 
+        //cell1.innerHTML = `${usernumber}`;
+        cell1.innerHTML=`<img src='${usernumber}.png' />`;
+        cell2.innerHTML = `<img src='${compnumber}.png' />`; 
         incrementuserscore();
         getcomputernumber();
     }
@@ -67,8 +68,8 @@ function userscore(){
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         row.style.backgroundColor="#ff0000";
-        cell1.innerHTML = `${usernumber}`;
-        cell2.innerHTML = `${compnumber}`; 
+        cell1.innerHTML=`<img src='${usernumber}.png' />`;
+        cell2.innerHTML = `<img src='${compnumber}.png' />`; 
         startbtn.style.display = "none";
         batsmanheading.style.display="none";
         a.style.display="block";
@@ -81,8 +82,8 @@ function computerscore(){
         var row = tablebowling.insertRow(1);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
-        cell1.innerHTML = `${usernumber}`;
-        cell2.innerHTML = `${compnumber}`; 
+        cell1.innerHTML=`<img src='${usernumber}.png' />`;
+        cell2.innerHTML = `<img src='${compnumber}.png' />`; 
         incrementcomputerscore();
         getcomputernumber();
     }
@@ -90,8 +91,8 @@ function computerscore(){
         var row = tablebowling.insertRow(1);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
-        cell1.innerHTML = `${usernumber}`;
-        cell2.innerHTML = `${compnumber}`; 
+        cell1.innerHTML=`<img src='${usernumber}.png' />`;
+        cell2.innerHTML = `<img src='${compnumber}.png' />`; 
         if(computerscorecount>scorecount){
             alert(`The user number was also ${usernumber}. Game over. User Score=${scorecount} Computer Score=${computerscorecount} Computer won!`);
         }
