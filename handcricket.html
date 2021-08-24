@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="en">
+    <meta charset="utf-8">
     <title>Hand Cricket</title>
     <script src="response.js" defer></script>
   </head>
-  <body onload="getcomputernumber()">
+  <body onload="start()">
     <h1>Hand Cricket</h1>
-    <div class="userbuttons">
-      <h3>Choose Number</h3>
+    <div class="userbuttonsbat">
+      <h3>You are the batsman. Choose Number</h3>
       <button style="background-color: red" class="b1">1</button>
       <button style="background-color: red" class="b2">2</button>
       <button style="background-color: red" class="b3">3</button>
@@ -20,12 +21,25 @@
       <button style="background-color: red" class="b10">10</button>
     </div>
 
+    <div class="userbuttonsbowl">
+        <h3>You are the bowlsman. Choose Number</h3>
+        <button style="background-color: blue" class="b1">1</button>
+        <button style="background-color: blue" class="b2">2</button>
+        <button style="background-color: blue" class="b3">3</button>
+        <button style="background-color: blue" class="b4">4</button>
+        <button style="background-color: blue" class="b5">5</button>
+        <button style="background-color: blue" class="b6">6</button>
+        <button style="background-color: blue" class="b7">7</button>
+        <button style="background-color: blue" class="b8">8</button>
+        <button style="background-color: blue" class="b9">9</button>
+        <button style="background-color: blue" class="b10">10</button>
+      </div>
+
     <div class="footer">   
         <button id="end">End Game</button>
         <button id="reset">Reset</button>
-        <span id="try">No of tries: 000</span>
-        <span id="score">Score: 000</span>  
-        
+        <span id="userscore">User Score: 000</span>  
+        <span id="compscore">Computer Score: 000</span>  
       </div>  
       
   </body>
