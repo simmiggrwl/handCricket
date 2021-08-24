@@ -1,5 +1,6 @@
 var startbtn=document.querySelector(".userbuttons");
 var resetbtn=document.querySelector("#reset");
+var endbtn=document.querySelector("#end");
 const score = document.querySelector('#score');
 const trycounter = document.querySelector('#try');
 var usernumber=0;
@@ -53,5 +54,10 @@ startbtn.addEventListener('click', (e) => {
 });
 
 resetbtn.addEventListener('click', (e) =>{
+    location=location;
+})
+
+endbtn.addEventListener('click', (e)=>{
+    alert(`You got ${scorecount} out of ${nooftry} right!`)
     location=location;
 })
